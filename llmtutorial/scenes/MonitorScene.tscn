@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://w8jfvcgonr68"]
 
-[node name="MonitorScene" type="Node2D"]
+[ext_resource type="Script" uid="uid://b2ga8qdk73be" path="res://scenes/monitor_scene.gd" id="1_ejx86"]
 
-[node name="Control" type="Control" parent="."]
+[node name="MonitorScene" type="Node2D" unique_id=965966406]
+script = ExtResource("1_ejx86")
+
+[node name="Control" type="Control" parent="." unique_id=1637312659]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1024.0
 offset_bottom = 768.0
 
-[node name="ScreenBackground" type="ColorRect" parent="Control"]
+[node name="ScreenBackground" type="ColorRect" parent="Control" unique_id=1011959160]
 modulate = Color(0.968627, 0.968627, 0.741176, 0.462745)
 layout_mode = 1
 anchors_preset = 15
@@ -17,7 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=661287551]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -31,16 +34,16 @@ offset_bottom = 319.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Control/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/VBoxContainer" unique_id=222472265]
 custom_minimum_size = Vector2(0, 600)
 layout_mode = 2
 horizontal_scroll_mode = 0
 
-[node name="Label" type="Label" parent="Control/VBoxContainer/ScrollContainer"]
+[node name="Label" type="Label" parent="Control/VBoxContainer/ScrollContainer" unique_id=707619037]
 custom_minimum_size = Vector2(700, 200)
 layout_mode = 2
 text = "asdsadsdsdsadadsdsadsadsaasdsadsdsdsadadsdsadsadsaasdsadsdsdsadadsdsadsadsaasdsadsdsdsadadsdsadsadsa"
 
-[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="Control/VBoxContainer" unique_id=1596154459]
 layout_mode = 2
 placeholder_text = "Type Something..."
